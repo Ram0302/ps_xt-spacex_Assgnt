@@ -1,5 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+SpaceX Missions
 
+An application used to filter data from http://api.spacexdata.com/ based on user preference, built with React, Next.js, JavaScript, and CSS.
+
+## Installation and Setup Instructions
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+
+Installation:
+
+`npm install`  
 ## Getting Started
 
 First, run the development server:
@@ -14,17 +23,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+## Reflection
 
-To learn more about Next.js, take a look at the following resources:
+This was a 2 days project built as an assignment. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I started this process by using the `npx create-next-app` boilerplate.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+One of the main challenges I ran into was Server Side Rendering and url change without refresh. This lead me to spend a some time on a research spike into Next.js, next/router.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![High Light House Score](../public/HLS.png)
+Format: ![High Light House Score](../public/HLS.png)

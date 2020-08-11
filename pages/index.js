@@ -1,13 +1,11 @@
 import React, { useState, useEffect} from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router'
 import {RefactorData, generateQueryString} from '../utilities/utility';
 import Fetchdata from './api/fetchData';
 import styles from '../styles/Home.module.css';
 import Filter from '../components/Filter';
-import DetailsList from '../components/missionDetails';
+import DetailsList from '../components/missionDetails'; 
 export default function Home({initialData}) {
-  const router = useRouter();
   const [state, setState] = useState({
     data:initialData,
     filters:{
@@ -30,7 +28,7 @@ export default function Home({initialData}) {
   }
   useEffect(() => {
     history.pushState(null, null, `/spacexdata/v3/launches?limit=100${generateQueryString(state.filters)}`);
-  }, [state])
+  }, [state]);
   return (
     <div className={styles.container}>
       <Head>

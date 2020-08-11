@@ -12,7 +12,7 @@ return(
         <div className={styles.card_logo}>
         {   
             data.mission_patch?
-            <img src={data.mission_patch} />:
+            <img src={data.mission_patch} alt={data.mission_name}/>:
             <span className={styles.fallback_text}>Mission Patch Not Available</span>
         }
         </div>
