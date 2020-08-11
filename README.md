@@ -30,6 +30,5 @@ This was a 2 days project built as an assignment. Project goals included using t
 I started this process by using the `npx create-next-app` boilerplate.
 
 One of the main challenges I ran into was Server Side Rendering and url change without refresh. This lead me to spend a some time on a research spike into Next.js, next/router.
-
-![High Light House Score](../public/HLS.png)
-Format: ![High Light House Score](../public/HLS.png)
+## High Light House Score
+![High Light House Score](./public/HLS.png)
