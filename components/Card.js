@@ -12,7 +12,7 @@ return(
         <div className={styles.card_logo}>
         {   
             data.mission_patch?
-            <LazyLoad scrollContainer={'#divScrollContainer'} height={200} width={200}>
+            <LazyLoad scrollContainer={'.scroll-container'} height={200} width={200}>
             <img src={data.mission_patch} alt={data.mission_name}/>
             </LazyLoad>:
             <span className={styles.fallback_text}>Mission Patch Not Available</span>

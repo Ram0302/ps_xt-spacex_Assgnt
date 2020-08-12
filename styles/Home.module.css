@@ -23,6 +23,7 @@
   flex-flow: row wrap;
   flex: 1;
   min-height: 0;
+  overflow: auto;
 }
 .details_list_wrapper{
     flex: 1;
@@ -30,18 +31,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 6px;
     grid-row-gap: 6px;
-    height: 100%;
-    overflow: auto;
+    width: 85%;
 }
 .filter_wrapper{
     flex: 0 0 13%;
     align-self: flex-start;
     background-color: white;
-    display: flex;
-    flex-flow: column;
-    min-height: 0;
     padding: 20px 15px 20px;
+    position: sticky;
     border-radius: 10px;
+    top: 0;
     width: 100%;
 }
 .filter_wrapper form{
@@ -153,17 +152,20 @@
   overflow: unset;
   margin-top: 15px;
   grid-template-columns: 1fr !important;
+  width:100% !important;
 }
 .card{
   margin:0;
 }
 .filter_wrapper{
   align-self: center;
+  position: relative;
 }
 }
 @media only screen and (max-width: 1024px) {
   .details_list_wrapper{
     grid-template-columns: 1fr 1fr;
+    width: 77%;
   }
   .filter_wrapper{
     flex:0 0 23%;
@@ -177,9 +179,4 @@
   .filter_wrapper{
     flex:0 0 15%
   }
-}
-@media only screen and (max-height: 700px) {
-.filter_wrapper{
-  height: 100%;
-}
 }

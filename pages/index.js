@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css';
 import Filter from '../components/Filter';
 import DetailsList from '../components/missionDetails'; 
 export default function Home({initialData}) {
+  const classesString = `scroll-container ${styles.content}`
   const [state, setState] = useState({
     data:initialData,
     filters:{
@@ -38,7 +39,7 @@ export default function Home({initialData}) {
     This Page Shows SpaceX Projects Fetched from External API"></meta>
       </Head>
       <header>SpaceX Launch Programs</header>
-      <div className={styles.content}>
+      <div className={classesString}>
         <Filter onFilter={handleFilter} appliedFilter = {state.filters}/>
         <DetailsList data={state.data} filters={state.filters}/>
       </div>
