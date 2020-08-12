@@ -29,7 +29,7 @@ export default function Home({initialData}) {
   }
   useEffect(() => {
     history.pushState(null, null, `/spacexdata/v3/launches?limit=100${generateQueryString(state.filters)}`);
-  }, [state]);
+  }, [state.filters]);
   return (
     <div className={styles.container}>
       <Head>
@@ -40,7 +40,9 @@ export default function Home({initialData}) {
       </Head>
       <header>SpaceX Launch Programs</header>
       <div className={classesString}>
+        <div className={styles.filter_wrapper}>
         <Filter onFilter={handleFilter} appliedFilter = {state.filters}/>
+        </div>
         <DetailsList data={state.data} filters={state.filters}/>
       </div>
       <footer><b>Developed By: </b>Ram Charan Duddupudi</footer>

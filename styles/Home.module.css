@@ -36,12 +36,21 @@
 .filter_wrapper{
     flex: 0 0 13%;
     align-self: flex-start;
-    background-color: white;
-    padding: 20px 15px 20px;
-    position: sticky;
-    border-radius: 10px;
+   position: sticky;
     top: 0;
     width: 100%;
+    flex-flow: column;
+    display: flex;
+    height: 100%;
+}
+.filters_content{
+    background-color: white;
+    padding: 20px 15px 20px;
+    border-radius: 10px;
+    min-height: 0;
+    flex-flow: column;
+    display: flex;
+  
 }
 .filter_wrapper form{
   flex: 1;
@@ -60,7 +69,7 @@
   grid-column-gap: 20px;
   grid-row-gap: 10px;
 }
-.filter_wrapper > h2{
+.filters_content > h2{
   text-align: center;
   margin: 0;
 }
@@ -105,11 +114,19 @@
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+    height: 200px;
+  overflow: hidden;
 }
 .card_logo img, .card_logo .fallback_text{
   width:200px;
   height: 200px;
-  line-height: 200px;
+  text-align: center;
+}
+.card_logo .fallback_text{
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
 }
 .card_body{
   background-color: #fff;
@@ -160,6 +177,8 @@
 .filter_wrapper{
   align-self: center;
   position: relative;
+  height: auto !important;
+
 }
 }
 @media only screen and (max-width: 1024px) {

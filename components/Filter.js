@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
  const Filter = (props)=> { 
     let startYear = 2006; 
     return (
-        <div className={styles.filter_wrapper}> 
+        <div className={styles.filters_content}> 
             <h2>Filters</h2> 
             <form id = "formFilter" noValidate> 
                 <p>Launch Year</p>
