@@ -34,6 +34,8 @@ export default function Home({initialData}) {
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="Description" content="Author: D. Ram Charan,
+    This Page Shows SpaceX Projects Fetched from External API"></meta>
       </Head>
       <header>SpaceX Launch Programs</header>
       <div className={styles.content}>

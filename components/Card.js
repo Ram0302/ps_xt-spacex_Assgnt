@@ -1,5 +1,5 @@
 import React from 'react';
-import { deserialize } from "react-serialize"
+import LazyLoad from 'react-lazyload';
 import styles from '../styles/Home.module.css';
 const Card = ({data,filters})=>{
 const missions = data.mission_id.map((id) =>
@@ -12,7 +12,9 @@ return(
         <div className={styles.card_logo}>
         {   
             data.mission_patch?
-            <img src={data.mission_patch} alt={data.mission_name}/>:
+            <LazyLoad scrollContainer={'#divScrollContainer'} height={200} width={200}>
+            <img src={data.mission_patch} alt={data.mission_name}/>
+            </LazyLoad>:
             <span className={styles.fallback_text}>Mission Patch Not Available</span>
         }
         </div>

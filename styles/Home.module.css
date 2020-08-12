@@ -37,9 +37,17 @@
     flex: 0 0 13%;
     align-self: flex-start;
     background-color: white;
+    display: flex;
+    flex-flow: column;
+    min-height: 0;
     padding: 20px 15px 20px;
     border-radius: 10px;
     width: 100%;
+}
+.filter_wrapper form{
+  flex: 1;
+    min-height: 0;
+    overflow: auto;
 }
 .filter_wrapper form > p{
     text-align: center;
@@ -169,4 +177,9 @@
   .filter_wrapper{
     flex:0 0 15%
   }
+}
+@media only screen and (max-height: 700px) {
+.filter_wrapper{
+  height: 100%;
+}
 }
