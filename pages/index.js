@@ -50,7 +50,7 @@ export default function Home({initialData}) {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100');
   let initialData = RefactorData(await res.json());
   return {
